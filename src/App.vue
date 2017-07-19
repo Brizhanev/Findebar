@@ -5,7 +5,10 @@
       :zoom="14"
       style="width: 100%; height: 100%; position: absolute; left:0; top:0" map-type-id="terrain"
     >
-      <gmap-info-window :position="center">{{ marker[0].text }}</gmap-info-window>
+      <gmap-info-window 
+        :position="center">
+        {{ marker[0].text }}
+      </gmap-info-window>
       <gmap-marker
         :key="index"
         v-for="(m, index) in markers"
